@@ -1,0 +1,11 @@
+https://www.toolify.ai/ai-news/capture-and-save-stunning-images-in-expo-react-native-apps-573004
+
+
+
+
+const savePhoto = async () => {
+if (hasMediaLibraryPermissions) {
+await MediaLibrary.saveToLibraryAsync(photo.uri);
+setPhoto(undefined);
+}
+};
