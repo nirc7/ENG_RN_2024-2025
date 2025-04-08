@@ -46,7 +46,11 @@ export default function Registration() {
 
         <BTNElm radius={"sm"} type="solid" color="success"
           onPress={btnRegister}>
-          <Icon name="person" color="purple" />
+          <Icon
+            name='person-add-outline'
+            type='ionicon'
+            color='#f50'
+          />
           Register
         </BTNElm>
 

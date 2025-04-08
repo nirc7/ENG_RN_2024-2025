@@ -18,6 +18,7 @@ const CustomDrawerContent = (props) => {
         label={"add item"}
         onPress={()=> {router.push('/DrawerDir/(tabs)/additem');}}
         icon={({color, size})=> (<Feather name="arrow-up-circle" size={24} color={color}/>)}
+        
       />
       <Text>asdasd</Text>
       <DrawerItem
