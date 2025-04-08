@@ -2,29 +2,28 @@ import { DrawerContentScrollView, DrawerItem } from '@react-navigation/drawer';
 import { Drawer } from 'expo-router/drawer';
 import { Text } from 'react-native';
 import { GestureHandlerRootView } from "react-native-gesture-handler";
-import {router} from 'expo-router';
+import { router } from 'expo-router';
 import { Feather } from '@expo/vector-icons';
 
 const CustomDrawerContent = (props) => {
-
   return (
-
     <DrawerContentScrollView {...props}>
+      <Text>{'\n\n\n'} SHOP{'\n\n\n'}</Text>
       <DrawerItem
         label={"shop"}
-        onPress={()=> {router.push('/DrawerDir/(tabs)/shop');}}
+        onPress={() => { router.push('/DrawerDir/(tabs)/shop'); }}
+        icon={({ color, size }) => (<Feather name="shopping-cart" size={24} color={'green'} />)}
       />
       <DrawerItem
         label={"add item"}
-        onPress={()=> {router.push('/DrawerDir/(tabs)/additem');}}
-        icon={({color, size})=> (<Feather name="arrow-up-circle" size={24} color={color}/>)}
-        
+        onPress={() => { router.push('/DrawerDir/(tabs)/additem'); }}
+        icon={({ color, size }) => (<Feather name="plus-square" size={24} color={color} />)}
       />
-      <Text>asdasd</Text>
+      <Text>{'\n\n\n'}____________{'\n\n\n'}</Text>
       <DrawerItem
-        label={"login"}
-        onPress={()=> {router.push('/');}}
-        icon={({color, size})=> (<Feather name="arrow-up-circle" size={24} color={color}/>)}
+        label={"logout"}
+        onPress={() => { router.push('/'); }}
+        icon={({ color, size }) => (<Feather name="log-out" size={24} color={color} />)}
       />
     </DrawerContentScrollView>
   );
@@ -33,7 +32,15 @@ const CustomDrawerContent = (props) => {
 export default function DrawerLayout() {
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>
-      <Drawer drawerContent={props => <CustomDrawerContent {...props} />} />
+      <Drawer
+        drawerContent={props => <CustomDrawerContent {...props} />}
+        screenOptions={{
+          headerShown: true,
+          headerTitle: 'Shop',
+          headerTintColor: '#fff',
+          headerStyle: { backgroundColor: '#54313f' }
+        }}
+      />
     </GestureHandlerRootView>
     // <GestureHandlerRootView style={{ flex: 1 }}>
     //   <Drawer screenOptions={{
