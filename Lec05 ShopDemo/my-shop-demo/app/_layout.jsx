@@ -1,5 +1,5 @@
 import { Stack } from "expo-router";
-import ShopContextProvider  from './ShopContextProvider';
+import ShopContextProvider from './ShopContextProvider';
 
 export default function RootLayout() {
   return (
@@ -8,6 +8,7 @@ export default function RootLayout() {
         screenOptions={{ headerShown: false, }}>
         <Stack.Screen name="index" />
         <Stack.Screen name="registration" />
+        <Stack.Screen name="cart" />
         {/* <Stack.Screen name="./DrawerDir/(tabs)" options={{ headerShown: false }} /> */}
       </Stack>
     </ShopContextProvider>

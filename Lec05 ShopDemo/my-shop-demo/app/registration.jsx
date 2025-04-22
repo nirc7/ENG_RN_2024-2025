@@ -1,11 +1,11 @@
+import { useContext } from "react";
 import { Dimensions, Text, View, Button, Alert } from "react-native";
 
 import { router, Link } from 'expo-router';
 
 import { Button as BTNElm, Icon, Input } from '@rneui/themed';
-import { useContext } from "react";
-import { ShopContext } from "./ShopContextProvider";
 
+import { ShopContext } from "./ShopContextProvider";
 
 const windowWidth = Dimensions.get('window').width;
 const windowHeight = Dimensions.get('window').height;
@@ -16,9 +16,9 @@ export default function Registration() {
   btnRegister = () => {
 
     let rnd = Math.floor(Math.random() * 10) + 1;
-    let name = 'avi' + rnd;
+    let mail = 'avi' + rnd;
     let pass = rnd;
-    AddUser(name, pass);
+    AddUser(mail, pass);
     router.push('/');
   }
 

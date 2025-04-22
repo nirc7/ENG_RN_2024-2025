@@ -1,11 +1,11 @@
+import { useContext } from "react";
 import { Dimensions, Text, View, Button, Alert } from "react-native";
 
 import { router, Link } from 'expo-router';
 
 import { Button as BTNElm, Icon, Input } from '@rneui/themed';
-import { useContext } from "react";
-import { ShopContext } from "./ShopContextProvider";
 
+import { ShopContext } from "./ShopContextProvider";
 
 const windowWidth = Dimensions.get('window').width;
 const windowHeight = Dimensions.get('window').height;
@@ -15,6 +15,10 @@ export default function Index() {
 
   btnLogin = () => {
     console.log(users[1]);
+    console.log(users.length);
+    console.log(users);
+    
+    
     
     if (LoginUser('avi', '123') === undefined) {
       Alert.alert('Wrong Login', 'email or pass invalid!', [
