@@ -9,6 +9,7 @@ export default function RootLayout() {
         <Stack.Screen name="index" />
         <Stack.Screen name="registration" />
         <Stack.Screen name="cart" />
+        <Stack.Screen name="additem" />
         {/* <Stack.Screen name="./DrawerDir/(tabs)" options={{ headerShown: false }} /> */}
       </Stack>
     </ShopContextProvider>

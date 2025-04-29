@@ -29,10 +29,15 @@ export default function ShopContextProvider(props) {
 
   const AddUser = (mail, pass) => {
     let newUsers = [...users, { id: uuid.v4(), mail, pass, admin: false }];
+    console.log(newUsers);    
     setUsers(newUsers);
   }
 
   const LoginUser = (mail, pass) => {
+    console.log(mail, pass);
+    console.log(users[1]);
+    
+    
     let res = users.find(user => user.mail === mail && user.pass === pass);
     console.log(res);
     return res;
@@ -65,7 +70,10 @@ export default function ShopContextProvider(props) {
   }
 
   return (
-    <ShopContext.Provider value={{ users, AddUser, RemoveUser, LoginUser, items, ToggleItemChecked, SetAllItems2Off, AddItem }}>
+    <ShopContext.Provider value={{
+      users, AddUser, RemoveUser, LoginUser, SetUser, currentUser,
+      items, ToggleItemChecked, SetAllItems2Off, AddItem
+    }}>
       {props.children}
     </ShopContext.Provider>
   )

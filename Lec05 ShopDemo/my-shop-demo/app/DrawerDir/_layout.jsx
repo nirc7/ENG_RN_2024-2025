@@ -5,28 +5,59 @@ import { GestureHandlerRootView } from "react-native-gesture-handler";
 import { router } from 'expo-router';
 import { Feather } from '@expo/vector-icons';
 
+import { ShopContext } from '../ShopContextProvider';
+import { useContext } from 'react';
+
 const CustomDrawerContent = (props) => {
-  return (
-    <DrawerContentScrollView {...props}>
-      <Text>{'\n\n\n'} SHOP{'\n\n\n'}</Text>
-      <DrawerItem
-        label={"shop"}
-        onPress={() => { router.push('/DrawerDir/(tabs)/shop'); }}
-        icon={({ color, size }) => (<Feather name="shopping-cart" size={24} color={'green'} />)}
-      />
-      <DrawerItem
-        label={"add item"}
-        onPress={() => { router.push('/DrawerDir/(tabs)/additem'); }}
-        icon={({ color, size }) => (<Feather name="plus-square" size={24} color={color} />)}
-      />
-      <Text>{'\n\n\n'}____________{'\n\n\n'}</Text>
-      <DrawerItem
-        label={"logout"}
-        onPress={() => { router.push('/'); }}
-        icon={({ color, size }) => (<Feather name="log-out" size={24} color={color} />)}
-      />
-    </DrawerContentScrollView>
-  );
+  const { currentUser } = useContext(ShopContext);
+
+  if (!currentUser.admin) {
+    console.log('not admin');
+
+    return (
+      <DrawerContentScrollView {...props}>
+        <Text>{'\n\n  user mail=' + currentUser.mail}</Text>
+        <Text>{'\n\n\n'} SHOP{'\n\n\n'}</Text>
+        <DrawerItem
+          label={"shop"}
+          onPress={() => { router.push('/DrawerDir/(tabs)/shop'); }}
+          icon={({ color, size }) => (<Feather name="shopping-cart" size={24} color={'green'} />)}
+        />
+       
+        <Text>{'\n\n\n'}____________{'\n\n\n'}</Text>
+        <DrawerItem
+          label={"logout"}
+          onPress={() => { router.push('/'); }}
+          icon={({ color, size }) => (<Feather name="log-out" size={24} color={color} />)}
+        />
+      </DrawerContentScrollView>
+    );
+  }
+  else {
+    console.log('admin');
+    return (
+      <DrawerContentScrollView {...props}>
+         <Text>{'\n\n  user mail=' + currentUser.mail}</Text>
+        <Text>{'\n\n\n'} SHOP{'\n\n\n'}</Text>
+        <DrawerItem
+          label={"shop"}
+          onPress={() => { router.push('/DrawerDir/(tabs)/shop'); }}
+          icon={({ color, size }) => (<Feather name="shopping-cart" size={24} color={'green'} />)}
+        />
+        <DrawerItem
+          label={"add item"}
+          onPress={() => { router.push('/additem'); }}
+          icon={({ color, size }) => (<Feather name="plus-square" size={24} color={color} />)}
+        />
+        <Text>{'\n\n\n'}____________{'\n\n\n'}</Text>
+        <DrawerItem
+          label={"logout"}
+          onPress={() => { router.push('/'); }}
+          icon={({ color, size }) => (<Feather name="log-out" size={24} color={color} />)}
+        />
+      </DrawerContentScrollView>
+    );
+  }
 }
 
 export default function DrawerLayout() {

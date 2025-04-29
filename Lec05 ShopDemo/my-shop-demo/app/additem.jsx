@@ -3,7 +3,7 @@ import { View, Text, Image, StyleSheet } from 'react-native';
 
 import { router } from 'expo-router';
 
-import { ShopContext } from '../../ShopContextProvider';
+import { ShopContext } from './ShopContextProvider';
 
 import { Input, Button as BTNElm, Icon } from '@rneui/themed';
 
@@ -15,6 +15,14 @@ export default function AddItem(props) {
   const [name, setName] = useState(null);
   const [price, setPrice] = useState(0);
   const [image, setImage] = useState(null);
+
+  const { currentUser } = useContext(ShopContext);
+
+  if (!currentUser.admin) {
+    console.log('not admin');
+    router.push('/DrawerDir/(tabs)/shop');
+  }
+  else { console.log('admin'); }
 
   const btnAddItem = () => {
     AddItem(name, price, image);

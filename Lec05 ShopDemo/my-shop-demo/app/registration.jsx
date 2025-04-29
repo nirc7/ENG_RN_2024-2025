@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { Dimensions, Text, View, Button, Alert } from "react-native";
 
 import { router, Link } from 'expo-router';
@@ -12,13 +12,15 @@ const windowHeight = Dimensions.get('window').height;
 
 export default function Registration() {
   const { AddUser } = useContext(ShopContext);
+  const [mail, setMail] = useState(null);
+  const [password, setPassword] = useState(null);
 
   btnRegister = () => {
 
-    let rnd = Math.floor(Math.random() * 10) + 1;
-    let mail = 'avi' + rnd;
-    let pass = rnd;
-    AddUser(mail, pass);
+    // let rnd = Math.floor(Math.random() * 10) + 1;
+    // let mail = 'avi' + rnd;
+    // let pass = rnd.toString();
+    AddUser(mail, password);
     router.push('/');
   }
 
@@ -40,9 +42,12 @@ export default function Registration() {
         <Input
           placeholder='Email'
           leftIcon={{ type: 'font-awesome', name: 'envelope' }}
+          onChangeText={txt => setMail(txt)}
         />
         <Input placeholder="Password" secureTextEntry={true}
-          leftIcon={{ type: 'font-awesome', name: 'lock' }} />
+          leftIcon={{ type: 'font-awesome', name: 'lock' }}
+          onChangeText={txt => setPassword(txt)}
+        />
 
         <BTNElm radius={"sm"} type="solid" color="success"
           onPress={btnRegister}>
