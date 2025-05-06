@@ -1,5 +1,8 @@
 ﻿namespace WebApplication1.Models
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class User : UserDTO
     {
         public int Id { get; set; }

@@ -8,10 +8,17 @@ namespace WebApplication1.Controllers
     [ApiController]
     public class StudentsController : ControllerBase
     {
+
+        [HttpGet]
+        public IActionResult Get() {
+            return Ok(7); 
+        }  
+
         [HttpPost]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        
         public IActionResult Post([FromBody] UserDTO userdto)
         {
             try

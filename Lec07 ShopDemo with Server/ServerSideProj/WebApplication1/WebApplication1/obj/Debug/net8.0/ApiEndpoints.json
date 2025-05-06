@@ -1,6 +1,16 @@
 [
   {
     "ContainingType": "WebApplication1.Controllers.StudentsController",
+    "Method": "Get",
+    "RelativePath": "api/Students",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.StudentsController",
     "Method": "Post",
     "RelativePath": "api/Students",
     "HttpMethod": "POST",
