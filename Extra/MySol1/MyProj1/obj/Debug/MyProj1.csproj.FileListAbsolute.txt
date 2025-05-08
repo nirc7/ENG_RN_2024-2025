@@ -1,0 +1,10 @@
+C:\Users\Lab-G700\Desktop\ENG_RN_2024-2025\Extra\MySol1\MyProj1\bin\Debug\MyProj1.exe.config
+C:\Users\Lab-G700\Desktop\ENG_RN_2024-2025\Extra\MySol1\MyProj1\bin\Debug\MyProj1.exe
+C:\Users\Lab-G700\Desktop\ENG_RN_2024-2025\Extra\MySol1\MyProj1\bin\Debug\MyProj1.pdb
+C:\Users\Lab-G700\Desktop\ENG_RN_2024-2025\Extra\MySol1\MyProj1\obj\Debug\MyProj1.csproj.AssemblyReference.cache
+C:\Users\Lab-G700\Desktop\ENG_RN_2024-2025\Extra\MySol1\MyProj1\obj\Debug\MyProj1.csproj.CoreCompileInputs.cache
+C:\Users\Lab-G700\Desktop\ENG_RN_2024-2025\Extra\MySol1\MyProj1\obj\Debug\MyProj1.exe
+C:\Users\Lab-G700\Desktop\ENG_RN_2024-2025\Extra\MySol1\MyProj1\obj\Debug\MyProj1.pdb
+C:\Users\Lab-G700\Desktop\ENG_RN_2024-2025\Extra\MySol1\MyProj1\bin\Debug\ClassLibrary1.dll
+C:\Users\Lab-G700\Desktop\ENG_RN_2024-2025\Extra\MySol1\MyProj1\bin\Debug\ClassLibrary1.pdb
+C:\Users\Lab-G700\Desktop\ENG_RN_2024-2025\Extra\MySol1\MyProj1\obj\Debug\MyProj1.csproj.Up2Date

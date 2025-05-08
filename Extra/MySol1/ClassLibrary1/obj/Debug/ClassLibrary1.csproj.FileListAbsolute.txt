@@ -1,0 +1,6 @@
+C:\Users\Lab-G700\Desktop\ENG_RN_2024-2025\Extra\MySol1\ClassLibrary1\bin\Debug\ClassLibrary1.dll
+C:\Users\Lab-G700\Desktop\ENG_RN_2024-2025\Extra\MySol1\ClassLibrary1\bin\Debug\ClassLibrary1.pdb
+C:\Users\Lab-G700\Desktop\ENG_RN_2024-2025\Extra\MySol1\ClassLibrary1\obj\Debug\ClassLibrary1.csproj.AssemblyReference.cache
+C:\Users\Lab-G700\Desktop\ENG_RN_2024-2025\Extra\MySol1\ClassLibrary1\obj\Debug\ClassLibrary1.csproj.CoreCompileInputs.cache
+C:\Users\Lab-G700\Desktop\ENG_RN_2024-2025\Extra\MySol1\ClassLibrary1\obj\Debug\ClassLibrary1.dll
+C:\Users\Lab-G700\Desktop\ENG_RN_2024-2025\Extra\MySol1\ClassLibrary1\obj\Debug\ClassLibrary1.pdb

@@ -6,7 +6,7 @@ namespace WebApplication1.Models
     public static class DBServices
     {
         //static string conStr = @"Data Source=LAB-G700;Initial Catalog=DBUsers;User ID=sa;Password=RuppinTech!;";
-        static string conStr = "workstation id=DBUsers.mssql.somee.com;packet size=4096;user id=rup_SQLLogin_1;pwd=2ckbpz7od2;data source=DBUsers.mssql.somee.com;persist security info=False;initial catalog=DBUsers;TrustServerCertificate=True";
+        static string conStr = "workstation id=DBUsers2.mssql.somee.com;packet size=4096;user id=rup2_SQLLogin_3;pwd=m5c6gkzo2h;data source=DBUsers2.mssql.somee.com;persist security info=False;initial catalog=DBUsers2;TrustServerCertificate=True";
 
         private static User ExcQUser(string command)
         {

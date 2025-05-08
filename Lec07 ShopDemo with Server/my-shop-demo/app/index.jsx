@@ -10,7 +10,7 @@ import { ShopContext } from "./ShopContextProvider";
 const windowWidth = Dimensions.get('window').width;
 const windowHeight = Dimensions.get('window').height;
 
-const apiUrl = 'http://www.rup.somee.com/api/Students/';
+const apiUrl = 'http://www.rup2.somee.com/api/Students/';
 
 export default function Index() {
   const { users, LoginUser, SetUser } = useContext(ShopContext);
@@ -18,46 +18,62 @@ export default function Index() {
   const [password, setPassword] = useState(null);
 
 
-  // const fetchLoginFromServer = (myMail, myPassword) => {
-  //   const data = {
-  //     "mail": myMail,
-  //     "password": myPassword
-  //   };
+  const fetchLoginFromServer = (myMail, myPassword) => {
+    const data2Send = {
+      "mail": myMail,
+      "password": myPassword
+    };
 
-  //   fetch(apiUrl, {
-  //     method: 'POST',
-  //     body: JSON.stringify(data),
-  //     headers: new Headers({
-  //       'Content-type': 'application/json; charset=UTF-8', //very important to add the 'charset=UTF-8'!!!!
-  //       'Accept': 'application/json; charset=UTF-8',
-  //     })
-  //   })
-  //     .then(res => {
-  //       console.log('res=', res);
-  //       console.log('res.status=', res.status);
+    fetch(apiUrl, {
+      method: 'POST',
+      body: JSON.stringify(data2Send),
+      headers: new Headers({
+        'Content-type': 'application/json; charset=UTF-8', //very important to add the 'charset=UTF-8'!!!!
+        'Accept': 'application/json; charset=UTF-8',
+      })
+    })
+      .then(res => {
+        console.log('res=', res);
+        console.log('res.status=', res.status);
 
-  //       if (res.status === 204) {
-  //         console.log('wrong email or pass!');
-  //         return;
-  //       } else if (res.status === 200) {
-  //         return res.json()
-  //       }
-  //       else {
-  //         console.log('ERR!');
-  //         return;
-  //       }
-  //     })
-  //     .then(
-  //       (result) => {
-  //         console.log("fetch POST= ", result);
-  //         console.log(result.id);
-  //         console.log(result.isadmin);
-  //         console.log(result.name);
-  //       },
-  //       (error) => {
-  //         console.log("err post=", error);
-  //       });
-  // }
+        if (res.status === 200) {
+          return res.json()
+        }
+        else if (res.status === 204) {
+          console.log('wrong email or pass!');
+          Alert.alert('Wrong Login', 'email or pass invalid!', [
+            {
+              text: 'Cancel',
+              onPress: () => console.log('Cancel Pressed'),
+              style: 'cancel',
+            },
+            { text: 'OK', onPress: () => console.log('OK Pressed') },
+          ]);
+          return;
+        }
+        else {
+          console.log('ERR!');
+          return;
+        }
+      })
+      .then(
+        (result) => {
+          console.log("fetch POST= ", result);
+          let user = {
+            id: result.id,
+            mail: result.mail,
+            pass: result.password,
+            admin: result.isAdmin
+          };
+          console.log('user=', user);
+
+          SetUser(user);
+          router.push('/DrawerDir/(tabs)/shop');
+        },
+        (error) => {
+          console.log("err post=", error);
+        });
+  }
 
 
 
@@ -67,22 +83,24 @@ export default function Index() {
     console.log(users.length);
     console.log(users);
 
-    let currentUser = LoginUser(mail, password);
-    //let currentUser = fetchLoginFromServer(mail, password);
-    if (currentUser === undefined) {
-      Alert.alert('Wrong Login', 'email or pass invalid!', [
-        {
-          text: 'Cancel',
-          onPress: () => console.log('Cancel Pressed'),
-          style: 'cancel',
-        },
-        { text: 'OK', onPress: () => console.log('OK Pressed') },
-      ]);
-    }
-    else {
-      SetUser(currentUser);
-      router.push('/DrawerDir/(tabs)/shop');
-    }
+    //let currentUser = LoginUser(mail, password);
+    fetchLoginFromServer(mail, password);
+    // let currentUser = await fetchLoginFromServer(mail, password);
+    // console.log(currentUser);
+    // if (currentUser === undefined) {
+    //   Alert.alert('Wrong Login', 'email or pass invalid!', [
+    //     {
+    //       text: 'Cancel',
+    //       onPress: () => console.log('Cancel Pressed'),
+    //       style: 'cancel',
+    //     },
+    //     { text: 'OK', onPress: () => console.log('OK Pressed') },
+    //   ]);
+    // }
+    // else {
+    //   SetUser(currentUser);
+    //   router.push('/DrawerDir/(tabs)/shop');
+    // }
   }
 
   return (

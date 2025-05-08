@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Lab-G700\\Desktop\\ENG_RN_2024-2025\\Extra\\MySol1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3A91D363-1320-46FF-8F0C-021D234CAE07}|ClassLibrary1\\ClassLibrary1.csproj|c:\\users\\lab-g700\\desktop\\eng_rn_2024-2025\\extra\\mysol1\\classlibrary1\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A91D363-1320-46FF-8F0C-021D234CAE07}|ClassLibrary1\\ClassLibrary1.csproj|solutionrelative:classlibrary1\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B72B17D5-0585-43F6-A615-0D11AF3BDD5A}|MyProj1\\MyProj1.csproj|c:\\users\\lab-g700\\desktop\\eng_rn_2024-2025\\extra\\mysol1\\myproj1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B72B17D5-0585-43F6-A615-0D11AF3BDD5A}|MyProj1\\MyProj1.csproj|solutionrelative:myproj1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\Lab-G700\\Desktop\\ENG_RN_2024-2025\\Extra\\MySol1\\ClassLibrary1\\Class1.cs",
+              "RelativeDocumentMoniker": "ClassLibrary1\\Class1.cs",
+              "ToolTip": "C:\\Users\\Lab-G700\\Desktop\\ENG_RN_2024-2025\\Extra\\MySol1\\ClassLibrary1\\Class1.cs",
+              "RelativeToolTip": "ClassLibrary1\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T10:13:28.09Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Lab-G700\\Desktop\\ENG_RN_2024-2025\\Extra\\MySol1\\MyProj1\\Program.cs",
+              "RelativeDocumentMoniker": "MyProj1\\Program.cs",
+              "ToolTip": "C:\\Users\\Lab-G700\\Desktop\\ENG_RN_2024-2025\\Extra\\MySol1\\MyProj1\\Program.cs",
+              "RelativeToolTip": "MyProj1\\Program.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAEwBAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T10:12:45.151Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

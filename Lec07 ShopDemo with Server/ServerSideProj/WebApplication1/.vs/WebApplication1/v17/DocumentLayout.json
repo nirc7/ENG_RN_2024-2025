@@ -50,8 +50,7 @@
               "RelativeToolTip": "WebApplication1\\Properties\\launchSettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-05-06T08:00:29.388Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-06T08:00:29.388Z"
             },
             {
               "$type": "Document",
@@ -63,8 +62,7 @@
               "RelativeToolTip": "WebApplication1\\Program.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAADwvxAAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-06T07:24:30.99Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-06T07:24:30.99Z"
             },
             {
               "$type": "Document",
@@ -76,8 +74,7 @@
               "RelativeToolTip": "WebApplication1\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-04-29T09:32:01.377Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-29T09:32:01.377Z"
             },
             {
               "$type": "Document",
@@ -87,7 +84,7 @@
               "RelativeDocumentMoniker": "WebApplication1\\Models\\DBServices.cs",
               "ToolTip": "C:\\Users\\Lab-G700\\Desktop\\ENG_RN_2024-2025\\Lec07 ShopDemo with Server\\ServerSideProj\\WebApplication1\\WebApplication1\\Models\\DBServices.cs",
               "RelativeToolTip": "WebApplication1\\Models\\DBServices.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAA2wCEAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAmwA4AAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-29T09:31:19.553Z",
               "EditorCaption": ""
@@ -126,7 +123,7 @@
               "RelativeDocumentMoniker": "WebApplication1\\Controllers\\StudentsController.cs",
               "ToolTip": "C:\\Users\\Lab-G700\\Desktop\\ENG_RN_2024-2025\\Lec07 ShopDemo with Server\\ServerSideProj\\WebApplication1\\WebApplication1\\Controllers\\StudentsController.cs",
               "RelativeToolTip": "WebApplication1\\Controllers\\StudentsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-29T09:14:09.124Z",
               "EditorCaption": ""

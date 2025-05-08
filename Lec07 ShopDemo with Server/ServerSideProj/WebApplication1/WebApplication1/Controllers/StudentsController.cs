@@ -11,7 +11,7 @@ namespace WebApplication1.Controllers
 
         [HttpGet]
         public IActionResult Get() {
-            return Ok(7); 
+            return Ok(777); 
         }  
 
         [HttpPost]
